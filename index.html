@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Product Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>Welcome to SK Store</h1>
+      <p>Discover the best products with a modern touch.</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </header>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="category1">Category 1</button>
+        <button class="filter-btn" data-filter="category2">Category 2</button>
+      </div>
+      <div class="product-grid">
+        <!-- Product Cards -->
+        <div class="product-card" data-category="category1">
+          <img src="images/product1.jpg" alt="Product 1" loading="lazy">
+          <h3>Product 1</h3>
+          <p>Description of Product 1.</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-category="category2">
+          <img src="images/product2.jpg" alt="Product 2" loading="lazy">
+          <h3>Product 2</h3>
+          <p>Description of Product 2.</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-category="category2">
+          <img src="images/hero-image.jpg" alt="Product 3" loading="lazy">
+          <h3>Product 3</h3>
+          <p>Description of Product 3.</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopping Cart -->
+  <div id="cart" class="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items"></ul>
+    <button class="btn checkout">Checkout</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Modern Product Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
